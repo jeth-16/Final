@@ -30,6 +30,7 @@
             border: none;
             border-radius: 5px;
             text-decoration: none;
+            cursor: pointer;
         }
         .login-button:hover {
             background-color: #0056b3;
@@ -41,7 +42,14 @@
     <div class="container">
         <h1>Welcome to the School Attendance System</h1>
         <p>Please log in to access your account.</p>
-        <a href="login.html" class="login-button">Login</a>
+        <button class="login-button" onclick="redirectToHome()">Login</button>
     </div>
+
+    <script>
+        function redirectToHome() {
+            window.location.href = "Home.html"; // Change this to the correct page
+        }
+    </script>
+
 </body>
 </html>
